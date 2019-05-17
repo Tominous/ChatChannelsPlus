@@ -1,0 +1,26 @@
+# Whether or not the plugin will save if you mute a channel, if this is turned off
+# all channels you've muted will automatically be unmuted when you join back
+savemuted: false
+
+
+# There is no default channel, if the channel is set to default, a message will be treated as a normal message, and this plugin will not do anything
+channels:
+   staff:
+      name: "&7Staff"
+      format: "&7[&c&lStaff&7Chat] &a%vault_prefix%%player_name%&7: &f%message%"
+      permissions:
+      - chatchannels.staff
+      no_permission_message: "&cYou must have at least staff rank &7[&e&lHelper&7] &cto access this channel"
+   donator:
+      name: "&7Donator"
+      format: "&7[&a&lDonator&7Chat] &f%vault_prefix%%player_name%&7: &f%message%" # Support PlaceHolderAPI placeholders!
+      permissions:
+      - chatchannels.staff # This permission is now used twice, and gives access to both StaffChat and DonatorChat
+      - chatchannels.donators # Permission donators would have
+      no_permission_message: "&cYou must have at least donator rank &7[&a&lDonator&7] &cto access this channel"
+   admin:
+       name: "&7Admin"
+       format: "&7[&4&lAdmin&7Chat] &f%vault_prefix%%player_name%&7: &f%message%"
+       permissions:
+       - chatchannels.admin
+       no_permission_message: "&cYou must have at least staff rank &7[&4&lAdmin&7] &cto access this channel"

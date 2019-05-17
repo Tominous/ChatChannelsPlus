@@ -1,0 +1,25 @@
+name: ChatChannelsPlus
+main: nl.justmaffie.chatchannelsplus.ChatChannelsPlus
+version: ${ccp-version}
+api-version: 1.13
+author: JustMaffie
+depend:
+- PlaceholderAPI
+description: The best Chat Channels solution out there!
+commands:
+  chatchannelsplus:
+    aliases: [ccp]
+    description: Main command, and reload
+  chatchannel:
+    aliases: [channel]
+    description: Manage your channels
+permissions:
+  chatchannelsplus.reload:
+    default: op
+    description: Allows access to /ccp reload
+  chatchannelsplus.help:
+    default: op
+    description: Allows access to /ccp help
+  chatchannelsplus.access:
+    default: op
+    description: Allows access to all /channel commands
